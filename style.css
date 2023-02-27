@@ -1,0 +1,96 @@
+/* FONTS ------------------------------------------------- */
+
+@font-face {
+font-family: 'Font Name';
+src: url('./fonts/font-name.eot');
+src: url('./fonts/font-name.eot?#iefix') format('embedded-opentype'),
+     url('./fonts/font-name.woff2') format('woff2'),
+     url('./fonts/font-name.woff') format('woff'),
+     url('./fonts/font-name.ttf') format('truetype');
+font-style: normal;
+font-weight: normal;
+}
+
+
+/* OVERALL ----------------------------------------------- */
+
+html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: ;
+}
+
+body   {
+        background-color: ;
+        max-height: 100%;        
+        display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-items: center; 
+}
+
+input {
+    background-color: #85b0de; 
+    border-radius: 10px; 
+    color: black; 
+    border: none; 
+    font-size: 15px; 
+    padding-left: 15px; 
+    padding-right: 15px; }
+
+
+a {
+    color: black; 
+}
+
+
+/*  ------------------------- */
+
+.item1 { grid-area: top1; }
+.item2 { grid-area: top2; }
+.item3 { grid-area: top3; }
+.item4 { grid-area: top4; }
+.item5 { grid-area: top5; }
+.item6 { grid-area: line2; }
+.item7 { grid-area: center2; }
+.item8 { grid-area: line22; }
+.item9 { grid-area: line3; }
+.item10 { grid-area: line33; }
+.item11 { grid-area: line4; }
+.item12 { grid-area: line44; }
+.item13 { grid-area: bottom1; }
+.item14 { grid-area: bottom2; }
+.item15 { grid-area: bottom3; }
+.item16 { grid-area: bottom4; }
+.item17 { grid-area: bottom5; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'top1 top2 top3 top4 top5'
+    'line2 center2 center2 center2 line22'
+    'line3 center2 center2 center2 line33'
+    'line4 center2 center2 center2 line44'
+    'bottom1 bottom2 bottom3 bottom4 bottom5' ;
+  height: 700px; 
+  width: 950px; 
+   
+}
+
+#grid-wrapper {
+    display: block;
+}
+
+.item7 {
+    text-align: center; 
+}
+
+
+#sketch-container 
+{
+    position: absolute;  
+    z-index: -10; 
+    margin: 0 auto; 
+}
